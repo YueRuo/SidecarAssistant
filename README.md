@@ -18,6 +18,21 @@ Unzip the download and move `随航登录助手.app` to Applications. No build r
 
 [简体中文](#简体中文) · [English](#english)
 
+## 界面预览 / Screenshots
+
+<table>
+  <tr>
+    <th>简体中文</th>
+    <th>English</th>
+  </tr>
+  <tr>
+    <td><a href="docs/images/settings-zh-Hans.jpg"><img src="docs/images/settings-zh-Hans.jpg" alt="随航助手中文设置界面，展示自动发现设备、登录启动和自动连接方式" width="420"></a></td>
+    <td><a href="docs/images/settings-en.jpg"><img src="docs/images/settings-en.jpg" alt="Sidecar Assistant settings in English, showing device discovery, launch at login and auto-connect options" width="420"></a></td>
+  </tr>
+</table>
+
+示例设置界面，点击图片可查看大图。 / Example settings. Click an image to view it full size.
+
 ## 简体中文
 
 ### 可以做什么
