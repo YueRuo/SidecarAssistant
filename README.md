@@ -1,8 +1,15 @@
 # 随航助手 · Sidecar Assistant
 
+[简体中文](#简体中文) · [English](#english)
+
 **让 iPad 成为 Mac 的屏幕，连接更省事。**
 
 为 Mac mini 等设备准备的 macOS 菜单栏工具：登录后自动连接随航，也能在 iPad 上点一下快捷指令，主动发起连接。
+
+- **无需复杂设置**：在界面中点选即可配置，不用写脚本、改配置文件。
+- **Mac 上轻松安装**：下载解压，拖入“应用程序”；首次选好连接方式并保存，再点“连接 iPad”即可。
+- **iPad 不用改名**：支持中文、英文、空格和常见符号；自动发现时，连设备名称也不用填写。
+- **设置一次，登录后自动连**：选择自动发现设备，开启“登录后启动 App”并选好自动连接方式，之后登录 Mac，App 就会按设置自动查找并连接 iPad，更省心。
 
 ## ⬇️ 下载 / Download
 
@@ -10,13 +17,11 @@
 
 **v2.15.0 · macOS 14.2+ · Apple 芯片与 Intel 通用版 / Universal**
 
-下载并解压，将 `随航登录助手.app` 拖入“应用程序”即可使用，无需编译。
+下载并解压，将 `随航登录助手.app` 拖入“应用程序”。首次打开后，选择设备并保存，再点“连接 iPad”即可，无需编译。
 
-Unzip the download and move `随航登录助手.app` to Applications. No build required.
+Unzip the download and move `随航登录助手.app` to Applications. On first launch, choose your device settings, save, then click Connect to iPad. No build required.
 
 [下载目录 / Downloads](downloads/)
-
-[简体中文](#简体中文) · [English](#english)
 
 ## 界面预览 / Screenshots
 
@@ -40,7 +45,7 @@ Unzip the download and move `随航登录助手.app` to Applications. No build r
 - 自动发现可用 iPad，也可以指定一台设备。
 - 登录后启动，或拔掉最后一块实体屏幕时，按设置自动连接。
 - 在菜单栏直接连接、断开、查看状态。
-- 从 App 添加 iPad 快捷指令，通过 iCloud 同步到 iPad。
+- 可选：从 App 添加 iPad 快捷指令，通过 iCloud 同步到 iPad。
 - 中文、英文界面，默认跟随系统语言。
 
 ### 安全与隐私
@@ -63,7 +68,7 @@ Unzip the download and move `随航登录助手.app` to Applications. No build r
 
 1. **放进应用程序**：将 `随航登录助手.app` 拖到“应用程序”文件夹，然后打开。可以[直接下载 App](downloads/SidecarAssistant-v2.15.0-macOS.zip?raw=1)，或[从源码构建](#从源码构建)。
 2. **选好连接方式**：不接显示器的 Mac mini，推荐下面这组设置。
-3. **保存并试一次**：点击“保存设置”，再点“连接 iPad”。显示“已连接”就可以用了。
+3. **保存并连接**：首次点击“保存设置”，再点“连接 iPad”。显示“已连接”即可使用；后续 App 启动时会按保存的自动连接规则运行。
 
 | 设置 | 推荐选择 |
 | --- | --- |
@@ -85,7 +90,9 @@ Unzip the download and move `随航登录助手.app` to Applications. No build r
 
 设置页顶部的“语言”可以选择“跟随系统 / 简体中文 / English”，切换后立即生效、自动保存。其他连接设置修改后需要点击“保存设置”。
 
-### iPad 上，一键连接
+### iPad 上，一键连接（可选）
+
+**这部分可以跳过。** 完成 Mac 上的设置后，就能自动连接或在 Mac 上手动连接。想从 iPad 主动发起连接时，再按下面步骤设置快捷指令和远程登录。
 
 1. **Mac 开启远程登录**：“系统设置”→“通用”→“共享”→“远程登录”，允许你使用的 Mac 账户访问。
 2. **在 App 里添加**：“更多操作”→“添加到快捷指令…”，按提示填写 Mac 主机名或 IP、登录用户名及认证信息。端口通常保留 `22`，连接脚本已经填好。
@@ -154,7 +161,12 @@ docs/                   开发与维护说明
 
 **Use your iPad as a Mac display with less setup each time.**
 
-Sidecar Assistant is a macOS menu bar app for automatic and manual Sidecar connections, with an iPad shortcut to start a connection remotely.
+Sidecar Assistant is a macOS menu bar app for automatic and manual Sidecar connections, with an optional iPad shortcut to start a connection remotely.
+
+- **Simple setup**: choose options in the app, with no scripts or configuration files to edit.
+- **Easy Mac installation**: download, unzip and move the app to Applications. On first launch, choose your connection options, save, then click Connect to iPad.
+- **Keep your iPad’s name**: Chinese and English names, spaces and common symbols are supported. Automatic discovery needs no device name.
+- **Set it up once, connect after login**: select automatic device discovery, enable Launch App at Login and choose an auto-connect mode. The app then finds and connects to your iPad after you sign in, whenever your saved conditions are met.
 
 ### Security & privacy
 
@@ -170,7 +182,7 @@ macOS handles Sidecar discovery and connections. Optional SSH shortcuts, iCloud 
 
 1. Move `随航登录助手.app` to **Applications** and open it. [Download the app](downloads/SidecarAssistant-v2.15.0-macOS.zip?raw=1) or [build from source](#build-from-source).
 2. For a Mac mini without a monitor, choose **Find a Device Automatically**, enable **Launch App at Login**, and select **Connect Only Without a Physical Display**.
-3. Click **Save Settings**, then **Connect to iPad**.
+3. Click **Save Settings**, then **Connect to iPad** for your first connection. Later app launches follow your saved auto-connect setting.
 
 Requires macOS 14.2 or later and [Sidecar-compatible devices](https://support.apple.com/en-us/102597). Sign in to the same Apple Account with two-factor authentication. For wireless use, enable Wi-Fi, Bluetooth and Handoff, and keep your iPad nearby, awake and unlocked.
 
@@ -186,7 +198,9 @@ Automatic device discovery retries after 4 seconds, then 6 seconds, then every 8
 
 Use **Connect to iPad** or **Disconnect** whenever needed. Closing or minimizing the window keeps the app in the menu bar. Change **Language** at the top of Settings; the default is **System Default**, and language changes save immediately.
 
-### Connect from your iPad
+### Connect from your iPad (optional)
+
+**You can skip this section.** After setting up the Mac app, you can use auto-connect or connect manually from your Mac. Follow the steps below only if you want to start a connection from your iPad using a shortcut and Remote Login.
 
 1. On your Mac, enable **System Settings → General → Sharing → Remote Login** for your Mac account.
 2. In Sidecar Assistant, choose **More → Add to Shortcuts…** and enter your Mac host, login username and authentication details. Keep port `22` unless you use a different SSH port. The command is already filled in.
