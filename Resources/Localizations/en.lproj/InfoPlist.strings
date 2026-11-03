@@ -1,0 +1,7 @@
+//
+//  Created by YueRuo on 2026/11/2.
+//
+
+"CFBundleDisplayName" = "Sidecar Assistant";
+"CFBundleName" = "Sidecar Assistant";
+"NSAppleEventsUsageDescription" = "Allow Sidecar Assistant to connect or disconnect your selected iPad.";

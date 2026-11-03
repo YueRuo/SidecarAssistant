@@ -1,0 +1,7 @@
+//
+//  Created by YueRuo on 2026/11/2.
+//
+
+"CFBundleDisplayName" = "随航助手";
+"CFBundleName" = "随航助手";
+"NSAppleEventsUsageDescription" = "允许随航助手连接或断开你选择的 iPad。";

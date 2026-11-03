@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+//
+//  Created by YueRuo on 2026/11/2.
+//
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WFWorkflowName</key>
+	<string>iPad随航连接</string>
+	<key>WFWorkflowActions</key>
+	<array>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.comment</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFCommentActionText</key>
+				<string>导入时填写 Mac 主机、端口、用户名和密码，可沿用旧快捷指令的 SSH 配置。
+
+Mac 需要开启“远程登录”，并已登录桌面。请将 v2.12 或更新的“随航登录助手.app”放在“应用程序”中，提前保存“自动发现设备”或指定 iPad。
+
+运行本快捷指令会直接尝试连接已设置的 iPad，不受自动连接方式及内屏、外屏限制。没有可用屏幕时仍需 BetterDisplay。
+
+自动发现设备时只查找一次；尚未发现 iPad 可唤醒并解锁后再点一次。无需在此填写 iPad 名称。</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.runsshscript</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>6BC15FAB-ADF4-41C8-AB36-413C96FABED3</string>
+				<key>WFSSHHost</key>
+				<string></string>
+				<key>WFSSHPort</key>
+				<string>22</string>
+				<key>WFSSHUser</key>
+				<string></string>
+				<key>WFSSHAuthenticationType</key>
+				<string>Password</string>
+				<key>WFSSHPassword</key>
+				<string></string>
+				<key>WFSSHScript</key>
+				<string>"/Applications/随航登录助手.app/Contents/MacOS/HeadlessSidecarLogin" --connect</string>
+			</dict>
+		</dict>
+	</array>
+	<key>WFWorkflowClientVersion</key>
+	<string>1146.10</string>
+	<key>WFWorkflowMinimumClientVersion</key>
+	<integer>900</integer>
+	<key>WFWorkflowMinimumClientVersionString</key>
+	<string>900</string>
+	<key>WFWorkflowIcon</key>
+	<dict>
+		<key>WFWorkflowIconStartColor</key>
+		<integer>463140863</integer>
+		<key>WFWorkflowIconGlyphNumber</key>
+		<integer>61440</integer>
+	</dict>
+	<key>WFWorkflowImportQuestions</key>
+	<array>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>1</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>WFSSHHost</string>
+			<key>Text</key>
+			<string>主机：你的Mac主机名或IP</string>
+			<key>DefaultValue</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>1</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>WFSSHPort</string>
+			<key>Text</key>
+			<string>输入 SSH 端口，通常保持 22。</string>
+			<key>DefaultValue</key>
+			<string>22</string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>1</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>WFSSHUser</string>
+			<key>Text</key>
+			<string>用户：你的Mac登录用户名</string>
+			<key>DefaultValue</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ActionIndex</key>
+			<integer>1</integer>
+			<key>Category</key>
+			<string>Parameter</string>
+			<key>ParameterKey</key>
+			<string>WFSSHPassword</string>
+			<key>Text</key>
+			<string>输入该 Mac 账户的登录密码。使用 SSH 密钥时，可先留空，添加后修改认证方式。</string>
+			<key>DefaultValue</key>
+			<string></string>
+		</dict>
+	</array>
+	<key>WFWorkflowInputContentItemClasses</key>
+	<array/>
+	<key>WFWorkflowOutputContentItemClasses</key>
+	<array/>
+	<key>WFWorkflowTypes</key>
+	<array/>
+	<key>WFQuickActionSurfaces</key>
+	<array/>
+	<key>WFWorkflowHasShortcutInputVariables</key>
+	<false/>
+	<key>WFWorkflowHasOutputFallback</key>
+	<false/>
+</dict>
+</plist>
