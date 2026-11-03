@@ -111,6 +111,8 @@ App 按当前语言选择对应签名资源，交给固定的系统“快捷指�
 
 ## 发布
 
-源码仓库保留 `Sources`、`Resources`、`Tests`、`Tools`、`scripts`、文档和许可证。已签名 `.shortcut` 是必要运行资源，随源码保留；生成的 App、旧版本 ZIP、日志、本机配置和第三方安装包不进入源码仓库。
+源码仓库保留 `Sources`、`Resources`、`Tests`、`Tools`、`scripts`、`downloads`、文档和许可证。已签名 `.shortcut` 是必要运行资源，随源码保留；生成的 App、临时 ZIP、日志、本机配置和第三方安装包不进入源码仓库。
 
-构建产物位于被 Git 忽略的 `dist/`，可作为 GitHub Release 附件发布。上传前核对版本号、双架构和签名，并确认快捷指令中没有填写个人信息。
+当前使用仓库内相对链接下载：将确认可公开的 App 发布包放到 `downloads/`，命名为 `SidecarAssistant-版本号-macOS.zip`，并同步更新 README 顶部和中英文教程中的版本及下载链接。链接末尾的 `?raw=1` 用于在 GitHub 上直接下载文件。
+
+构建目录 `dist/` 和普通 ZIP 默认被 Git 忽略，只有 `downloads/SidecarAssistant-*-macOS.zip` 发布包被允许加入仓库。上传前核对版本号、双架构和签名，并确认快捷指令中没有填写个人信息。

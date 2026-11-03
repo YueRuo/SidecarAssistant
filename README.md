@@ -4,6 +4,18 @@
 
 为 Mac mini 等设备准备的 macOS 菜单栏工具：登录后自动连接随航，也能在 iPad 上点一下快捷指令，主动发起连接。
 
+## ⬇️ 下载 / Download
+
+### [直接下载 macOS App · Download for macOS](downloads/SidecarAssistant-v2.15.0-macOS.zip?raw=1)
+
+**v2.15.0 · macOS 14.2+ · Apple 芯片与 Intel 通用版 / Universal**
+
+下载并解压，将 `随航登录助手.app` 拖入“应用程序”即可使用，无需编译。
+
+Unzip the download and move `随航登录助手.app` to Applications. No build required.
+
+[下载目录 / Downloads](downloads/)
+
 [简体中文](#简体中文) · [English](#english)
 
 ## 简体中文
@@ -34,7 +46,7 @@
 
 ### Mac 上，3 步设置好
 
-1. **放进应用程序**：将 `随航登录助手.app` 拖到“应用程序”文件夹，然后打开。可以使用 Releases 中的发布包，或[从源码构建](#从源码构建)。
+1. **放进应用程序**：将 `随航登录助手.app` 拖到“应用程序”文件夹，然后打开。可以[直接下载 App](downloads/SidecarAssistant-v2.15.0-macOS.zip?raw=1)，或[从源码构建](#从源码构建)。
 2. **选好连接方式**：不接显示器的 Mac mini，推荐下面这组设置。
 3. **保存并试一次**：点击“保存设置”，再点“连接 iPad”。显示“已连接”就可以用了。
 
@@ -117,6 +129,7 @@ Resources/Shortcuts/    按语言分组的模板源码和已签名快捷指令
 Tests/                  主程序及连接助手测试
 Tools/                  图标生成工具
 scripts/                构建和测试入口
+downloads/              可直接下载的 App 发布包
 docs/                   开发与维护说明
 ```
 
@@ -140,7 +153,7 @@ macOS handles Sidecar discovery and connections. Optional SSH shortcuts, iCloud 
 
 ### Quick start
 
-1. Move `随航登录助手.app` to **Applications** and open it. Use a release package or [build from source](#build-from-source).
+1. Move `随航登录助手.app` to **Applications** and open it. [Download the app](downloads/SidecarAssistant-v2.15.0-macOS.zip?raw=1) or [build from source](#build-from-source).
 2. For a Mac mini without a monitor, choose **Find a Device Automatically**, enable **Launch App at Login**, and select **Connect Only Without a Physical Display**.
 3. Click **Save Settings**, then **Connect to iPad**.
 

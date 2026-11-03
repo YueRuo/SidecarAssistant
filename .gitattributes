@@ -1,0 +1,12 @@
+#
+#  Created by YueRuo on 2026/11/2.
+#
+
+* text=auto
+*.m text eol=lf
+*.command text eol=lf
+*.strings text eol=lf
+*.plist text eol=lf
+*.md text eol=lf
+*.shortcut binary
+downloads/*.zip binary

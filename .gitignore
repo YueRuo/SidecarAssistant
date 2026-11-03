@@ -1,0 +1,33 @@
+#
+#  Created by YueRuo on 2026/11/2.
+#
+
+# macOS metadata
+.DS_Store
+._*
+__MACOSX/
+
+# Generated application, release archives and compiler output
+/dist/
+/build/
+*.app/
+*.dmg
+*.zip
+!/downloads/SidecarAssistant-*-macOS.zip
+*.o
+*.dSYM/
+
+# Personal settings, logs and credentials
+.env
+.env.*
+*.log
+*.pem
+*.p12
+*.pfx
+
+# Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
